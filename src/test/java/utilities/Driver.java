@@ -25,14 +25,16 @@ public class Driver {
         if (appiumDriver == null) {
 
             UiAutomator2Options options=new UiAutomator2Options();
+
             options.setDeviceName("Pixel 4 H")
                     .setPlatformName("Android")
                     .setPlatformVersion("10.0")
                     .setAutomationName("UiAutomator2")
-                    //.setApp("C:\\Users\\elifk\\IdeaProjects\\AppiumNewVersion_Hybrid\\Apps\\Teknosa – Alisveris, Teknoloji_7.3.6_APKPure.apk")
-                    .setAppPackage("com.tmob.teknosa")
-                    .setAppActivity("com.tmob.teknosa.MainActivity")
+                    //.setApp("C:\\Users\\elifk\\IdeaProjects\\AppiumNewVersion_Hybrid\\Apps\\To-Do List - Schedule Planner_1.02.61.0928_APKPure.apk")
+                   .setAppPackage("todolist.scheduleplanner.dailyplanner.todo.reminders")
+                   .setAppActivity("app.todolist.activity.SplashActivity")
                     .setNoReset(false);
+
 
 
             if (ConfigReader.getProperty("platformName").equals("Android")) {
